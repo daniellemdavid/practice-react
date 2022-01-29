@@ -68,3 +68,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+learning moments:
+flex: 
+    kevin: https://www.youtube.com/watch?v=vQAvjof1oe4 
+background-postition:
+    https://www.w3schools.com/CSSref/pr_background-position.asp
+React router:
+    -Use import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+    -https://www.youtube.com/watch?v=UjHT_NKR_gU
+
+resources used:
+mushroom:
+     http://clipart-library.com/clip-art/mushroom-transparent-19.htm
+
+gradient:
+    https://cssgradient.io/
+
+
+Questions:
+    How do I create a home page that is outside of the template with React router?
+    How to create multiple pages from posts;

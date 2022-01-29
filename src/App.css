@@ -1,38 +1,271 @@
-.App {
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+.App{
+  position: relative;
+  font-size: 10px;
+  font-family: 'Padauk', monospace;
+  min-width: 200px;
+  background-color: #f0e8e8;
+  width: 90%;
+  margin: auto auto;
+}
+/* .App-header::before{
+  position: absolute;
+  content: " ";
+  width: 10%;
+  height: 60px;
+  background-image: url(mushroom-transparent-19.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 2%;
+  top: 4%;
+  opacity: .7;
+}  */
+
+.App-header {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 3.2rem;
+  color: rgb(228, 212, 212);
+  background-image: url(https://images.pexels.com/photos/5977360/pexels-photo-5977360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-size: 50%;
+  background-position: left center;
+  height: 150px;
+  justify-content: center;
+  top: 20px;
+}
+.App-header p{
+  /* border: 1px dotted black; */
+  text-align: center;
+  /* background-color:rgba(240, 232, 232, 0.247); */
+}
+.name{
+  color: rgb(235, 110, 72);
+}
+.postblocktitle{
+  /* background-color: white; */
+  /* width: fit-content; */
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 6%;
+  display: flex;
+  /* border: 1px dotted rgb(180, 49, 49); */
+}
+.postblocktitle > p{
+  
+  flex-basis: 30%;
+  /* padding: auto auto; */
+  /* border: 1px dotted black; */
+  height: 50px;
+  color: rgb(155, 141, 141);
+  background: rgb(85, 79, 79);
+  /* background-color: rgba(218, 46, 34, 0.795); */
+  border-radius: 0 10px 10px 0;
+}
+/* kevin: https://www.youtube.com/watch?v=vQAvjof1oe4 */
+.PostBlock{
+  padding: 20px 5px;
+  min-height: 40vh;
+  /* min-width: 300px; */
+  /* background-color: #282c34; */
+  background-color: rgb(240, 232, 232);
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* gap: 1em;  */
+  width: 90%;
+  margin: auto auto;
+  
+}
+
+.PostCard{
+  /* flex: 1 1 11em; */
+  /* flex: 1 1 150%; */
+  min-width: 10ch;
+  border: 2px solid black;
+  border-radius: 2px;
+  /* background-color: rgba(0, 0, 0, 0.555); */
+  position: relative;
+  padding: 10px;
+  margin: 10% 0px;
+  padding: 10px 20px;
+  padding-top: 39px;
+  font-size: .9rem;
+  /* max-width: 50%; */
+}
+
+.PostCard p{
+  margin: 30px;
+}
+.postImg{
+  /* border: 1px dotted black; */
+  /* width: fit-content; */
+  text-align: center;
+  margin: 0px 10px;
+  
+}
+.PostBlock img{
+  max-width: 60%;
+  border: 5px outset rgba(206, 199, 194, 0.74);
+  border-radius: 3%;
+  z-index: 2;
+}
+.logo{
+  max-width: 10px;
+}
+nav img{
+  max-width: 30px;
+  /* max-height: 80%; */
+  opacity: .7;
+  max-height: 20px;
+  margin: auto 2px auto 5px;
+}
+.NavBlock{
+  min-height: 30px;
+  display: flex;
+  /* background-color: rgb(49, 47, 47); */
+  background-color: rgb(61, 57, 57);
+  position: fixed;
+  top: 0;
+  width: 90%;
+  z-index: 2;
+}
+
+.NavElement{
+  /* border: 1px solid rgba(255, 0, 0, 0.507); */
+  /* flex: 1; */
+  text-align: center;
+  
+  flex: 1;
+  font-size: .9rem;
+}
+.NavElement:hover{
+  background-color: sienna;
+}
+.NavElement a{
+  display: block;
+}
+.NavElement a:hover{
+  color:beige;
+}
+a {
+  color: gray;
+  text-decoration: none;
+}
+.PostCard h2{
+ width: 100%;
+ text-align: end;
+ /* background-color: black; */
+ color: gray;
+}
+
+.PostCard p{
+  color: red;
+}
+.PostCard::before{
+  position: absolute;
+  content: " ";
+  border: 1px solid rgb(71, 69, 69);
+  width: 97.5%;
+  height: 106%;
+  left: 1%;
+  top: -3%;
+}
+
+/* mushrooms */
+.PostCard::after{
+  position: absolute;
+  content: " ";
+  /* border: 1px solid rgb(71, 69, 69); */
+  width: 10%;
+  height: 60px;
+  background-image: url(mushroom-transparent-19.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 45%;
+  top: -10%;
+  opacity: .9;
+  z-index: 0;
+}
+.Footer{
+  height: 10vh;
+  background-color: rgb(65, 61, 61);
+  color: white;
+}
+.Footer p{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(180, 49, 49); 
+}
+
+@media screen and (max-width: 550px){
+  .NavBlock{
+    /* display: flex; */
+    flex-direction: column;
+    
+  }
+  .NavElement{
+    margin-bottom: 3%;
+  }
+  .PostCard::after{
+    top: -6%;
+    height: 80px;
+    width: 15%;
+    right: 42%;
+  }
+  .App-header{
+    margin-top: 5%;
+    font-size: 3rem;
+  }
+  .PostCard img{
+    max-width: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.Basic{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.Home{
+  color: rgb(112, 105, 105);
+  text-align: center;
+  margin-top: 20px;
+  /* justify-content: center; */
+  min-height: 100vh;
+  font-size: 4rem;
+  /* background-image: url(https://images.pexels.com/photos/5977360/pexels-photo-5977360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Home p{
+  border: 1px dotted black;
+  height: 100%;
+}
+.Home::before{
+  position: absolute;
+  content: " ";
+  /* border: 1px solid rgb(71, 69, 69); */
+  width: 100%;
+  height: 100%;
+  background-image: url(mushroom-transparent-19.png);
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  left:5%;
+  opacity: .3;
+  z-index: 0;
 }
